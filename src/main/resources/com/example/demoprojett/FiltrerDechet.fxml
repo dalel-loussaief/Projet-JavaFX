@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="660.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demoprojett.FiltrerDechetController">
+    <children>
+        <TableView fx:id="table" layoutX="5.0" layoutY="70.0" prefHeight="452.0" prefWidth="886.0">
+            <columns>
+                <TableColumn fx:id="idF" prefWidth="75.0" text="idF"/>
+                <TableColumn fx:id="nom" prefWidth="89.0" text="Nom" />
+                <TableColumn fx:id="type" prefWidth="319.0" text="type" />
+                <TableColumn fx:id="quantite" prefWidth="156.0" text="quantite" />
+                <TableColumn fx:id="score" prefWidth="187.199951171875" text="score" />
+            </columns>
+        </TableView>
+        <Text layoutX="14.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Liste de filtrage de dechets :" wrappingWidth="374.64453125">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Text>
+      <Button fx:id="filtrer" layoutX="709.0" layoutY="25.0" mnemonicParsing="false" onAction="#RemplirList" text="Filtrer" />
+    </children>
+</AnchorPane>

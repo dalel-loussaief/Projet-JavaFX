@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane prefHeight="581.0" prefWidth="758.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demoprojett.ListeDechetsController">
+    <children>
+        <TableView fx:id="table" layoutX="50.0" layoutY="186.0" prefHeight="292.0" prefWidth="646.0">
+            <columns>
+                <TableColumn fx:id="id" prefWidth="75.0" text="id" />
+                <TableColumn fx:id="nom" prefWidth="89.0" text="Nom" />
+                <TableColumn fx:id="quantite" prefWidth="380.0" text="quantite" />
+                <TableColumn fx:id="type" prefWidth="106.0" text="type" />
+
+
+            </columns>
+        </TableView>
+
+        <Button layoutX="95.0" layoutY="502.0" minHeight="29.0" mnemonicParsing="false" onAction="#Ajoutdech" prefHeight="29.0" prefWidth="158.0" style="-fx-background-color: #4e9ce4;" text="Ajouter un Dechets" />
+        <Button layoutX="149.0" layoutY="151.0" mnemonicParsing="false" onAction="#RemplirList" prefHeight="29.0" prefWidth="187.0" style="-fx-background-color: #4e9ce4;" text="Afficher les dechets" />
+        <Button layoutX="300.0" layoutY="502.0" mnemonicParsing="false" onAction="#Updatep" prefHeight="29.0" prefWidth="158.0" style="-fx-background-color: #4e9ce4;" text="Modifier un dechets" />
+        <Button layoutX="503.0" layoutY="502.0" mnemonicParsing="false" onAction="#Supp" prefHeight="29.0" prefWidth="147.0" style="-fx-background-color: #4e9ce4;" text="Supprimer un dechets" />
+        <Button layoutX="400.0" layoutY="151.0" mnemonicParsing="false" onAction="#AfficheDetails" prefHeight="29.0" prefWidth="187.0" style="-fx-background-color: #4e9ce4;" text="Afficher details " />
+      <HBox layoutY="552.0" prefHeight="29.0" prefWidth="758.0" style="-fx-background-color: #90EE90;" />
+
+    </children>
+</AnchorPane>
